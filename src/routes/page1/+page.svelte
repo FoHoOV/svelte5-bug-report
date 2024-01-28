@@ -1,10 +1,10 @@
 <script lang="ts">
-	import store from '$lib/store.js';
+	import store from '$lib/store';
 
 	const { data } = $props();
 	store.addTitle('page1');
 </script>
 
 <h2>
-	{data.name}
+	This will not show after navigation in the first div: {data.name}
 </h2>
